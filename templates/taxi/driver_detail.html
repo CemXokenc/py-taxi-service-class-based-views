@@ -8,7 +8,7 @@
     <ul>
       {% for car in driver.cars.all %}
         <li>
-          <a href="{{ car.get_absolute_url }}">{{ car.model }}</a>
+          <a href="{{ car.get_absolute_url }}">{{ car.id }}</a>
         </li>
       {% empty %}
         <p>No cars yet.</p>
